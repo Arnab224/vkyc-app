@@ -1,0 +1,32 @@
+# Ignore node_modules in both frontend and backend
+backend/node_modules/
+frontend/node_modules/
+
+# Ignore environment variables
+.env
+backend/.env
+frontend/.env
+
+# Ignore build output
+frontend/dist/
+frontend/.vite/
+backend/build/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore uploads if using Cloudinary (no need to track local files)
+backend/uploads/
+
+# macOS system files
+.DS_Store
+
+# VSCode settings (optional)
+.vscode/
+
+# Ignore socket cache if any
+socket.io/
+
+# Ignore Docker override files (if created locally)
+docker-compose.override.yml
