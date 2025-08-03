@@ -29,4 +29,5 @@ backend/uploads/
 socket.io/
 
 # Ignore Docker override files (if created locally)
-docker-compose.override.yml
+docker-compose.yml
+
