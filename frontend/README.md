@@ -1,12 +1,78 @@
-# React + Vite
+# 📹 vKYC App – Video KYC Verification Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A secure, scalable video-based KYC (Know Your Customer) onboarding platform built with the **MERN stack**, **LiveKit**, **Socket.io**, and modern frontend tools like **Vite** and **Tailwind CSS**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 👥 **User/Admin Authentication**
+- 🔐 **JWT-secured login**
+- 📁 **Document Upload** (Aadhaar, PAN, etc.)
+- 🎥 **Real-time Video KYC** via **LiveKit**
+- 📞 **Join Request System** using **Socket.io**
+- 👨‍💼 **Admin Dashboard** with request approvals
+- 📂 **Cloudinary Integration** for media storage
+- 🌐 **Vite** frontend with **Tailwind CSS** and modern UI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧱 Tech Stack
+
+### Frontend
+- React.js + Vite
+- Tailwind CSS
+- Axios
+- Socket.io-client
+- LiveKit React Components
+
+### Backend
+- Node.js + Express.js
+- MongoDB + Mongoose
+- JWT for auth
+- Socket.io (server)
+- Cloudinary for uploads
+
+---
+
+## 📁 Project Structure
+vkyc-app/
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── routes/
+│   ├── middleware/
+│   └── server.js
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   └── main.jsx
+│   └── index.html
+├── .env
+├── docker-compose.yml
+└── README.md
+
+
+---
+
+## ⚙️ Setup Instructions
+
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Arnab224/vkyc-app.git
+cd vkyc-app
+
+
+### 2. Install dependencies
+
+# Backend
+cd backend
+npm install
+
+# Frontend
+cd ../frontend
+npm install

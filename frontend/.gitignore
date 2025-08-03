@@ -1,24 +1,53 @@
-# Logs
-logs
-*.log
+# Node.js
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Vite
+dist/
+.vite/
+.cache/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Logs
+logs/
+*.log
+*.log.*
+
+# dotenv
+.env
+.env.*.local
+
+# OS
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Build output
+build/
+out/
+
+# Optional: Ignore uploads if stored locally (not in Cloudinary)
+uploads/
+public/uploads/
+
+# Socket.io temporary files
+socket.io/
+
+# Docker
+docker-compose.override.yml
+
+# MongoDB dump files
+dump/
+
+# Optional: ignore frontend build artifacts
+frontend/dist/
+frontend/.vite/
+
+# Optional: ignore backend build artifacts if using build tools
+backend/build/
+
+# Mac system files
+._*
