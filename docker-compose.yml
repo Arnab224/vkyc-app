@@ -1,0 +1,32 @@
+version: "3.8"
+
+services:
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build: ./backend
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/vkyc
+      - JWT_SECRET=iamarnabmandal
+      - LIVEKIT_URL=ws://livekit-server:7880
+    depends_on:
+      - mongo
+      - livekit-server
+
+  livekit-server:
+    image: livekit/livekit-server
+    ports:
+      - "7880:7880"
+    environment:
+      - LIVEKIT_KEYS=APIYq3GjtzDAccp:JMq39JHBffMhDUAfgvRXC0EHVB9ii0PWm7HxEnrnofoD
+    command: --dev
+
+volumes:
+  mongo-data:
